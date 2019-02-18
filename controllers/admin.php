@@ -17,6 +17,8 @@ session_start();
 spl_autoload_register('chargerClasse');
 $db = Database::BDD();
 $title = 'EasyBuy - Dashboard';
+$description = 'EasyBuy - Accueil, site de vente immobilière entre particulier.';
+$imageName = 'https://easybuy-rewrite.000webhostapp.com/assets/img/logo.jpg';
 $isActive = 4;
 
 $houseManager = new HouseManager($db);

@@ -29,6 +29,11 @@ if (isset($_GET['idUserProfil'])) {
     $infoMessage = $messageManager->getMessageById($id);
     if (empty($infoUser[0])) {
         header('location: http://localhost/EasyBuyRewrite/home');
+    } else {
+        foreach ($infoUser[0] as $infoUserTwitter) {
+            $description = 'EasyBuy - Profil, visitez le profil de ' . ucfirst($infoUserTwitter->getFirstname()) . ' ' . ucfirst($infoUserTwitter->getLastname()) .'.';
+            $imageName = 'https://easybuy-rewrite.000webhostapp.com/assets/img/logo.jpg';
+        }
     }
 } else {
     header('location: http://localhost/EasyBuyRewrite/home');

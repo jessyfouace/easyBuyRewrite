@@ -9,6 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#ff5722">
 
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="<?= $title ?>" />
+  <meta name="twitter:description" content="<?= $description ?>" />
+  <meta name="twitter:image" content="<?= $imageName ?>" />
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>

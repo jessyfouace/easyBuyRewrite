@@ -15,6 +15,8 @@ function chargerClasse($classname)
 session_start();
 spl_autoload_register('chargerClasse');
 $title = 'EasyBuy - Plus de biens';
+$description = 'EasyBuy - Accueil, site de vente immobilière entre particulier.';
+$imageName = 'https://easybuy-rewrite.000webhostapp.com/assets/img/logo.jpg';
 $isActive = 3;
 $db = Database::BDD();
 

@@ -30,9 +30,15 @@ if (!empty($_GET['houseIdentification'])) {
     $houseByToken = $houseManager->getHouseByToken($_GET['houseIdentification']);
     foreach ($houseByToken[0] as $houseTitle) {
         $title = 'EasyBuy - ' . ucfirst($houseTitle->getTitle());
+        $description = ucfirst($houseTitle->getTitle());
     }
     if (empty($houseByToken[0])) {
         header('location: http://localhost/EasyBuyRewrite/home');
+    } else {
+        foreach ($houseByToken[1] as $twitterInfo) {
+            $tableImageTwitter = explode(' ', $twitterInfo->getLink());
+            $imageName = $tableImageTwitter[1];
+        }
     }
 } else {
     header('location: http://localhost/EasyBuyRewrite/home');
