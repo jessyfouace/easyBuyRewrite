@@ -1,0 +1,18 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^home$ controllers/index.php [L,QSA]
+RewriteRule ^biens/([0-9]+)$ controllers/moreHouse.php?page=$1 [L,QSA]
+RewriteRule ^biens/([0-9]+)/([a-zA-Z\-]+)$ controllers/moreHouse.php?page=$1&departments=$2 [L,QSA]
+RewriteRule ^detail/([a-zA-Z0-9\-]+)$ controllers/houseInfo.php?houseIdentification=$1 [L,QSA]
+RewriteRule ^ajouter-un-bien$ controllers/addHouse.php [L,QSA]
+RewriteRule ^profil/([0-9]+)$ controllers/detailUser.php?idUserProfil=$1 [L,QSA]
+RewriteRule ^connection$ controllers/login.php [L,QSA]
+RewriteRule ^deconnection$ controllers/disconnect.php [L,QSA]
+RewriteRule ^admin$ controllers/admin.php [L,QSA]
+RewriteRule ^admin/plaintes$ controllers/admin.php?repport=true [L,QSA]
+RewriteRule ^admin/biens$ controllers/admin.php?house=true [L,QSA]
+RewriteRule ^admin/utilisateurs$ controllers/admin.php?users=true [L,QSA]
+RewriteRule ^edition-maison/([a-zA-Z0-9\-]+)$ controllers/updateHouse.php?houseIdentification=$1 [L,QSA]
+
+# Article avec numéro de page :
+# RewriteRule ^article-([0-9]+)-([0-9]+)-([0-9]+).html   /articles/article.php?id=$1&page=$2&rubrique=$3 [L]
