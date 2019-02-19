@@ -17,7 +17,7 @@ spl_autoload_register('chargerClasse');
 $isActive = 9;
 $db = Database::BDD();
 $title = 'EasyBuy - Connection / Inscription';
-$description = 'EasyBuy - Accueil, site de vente immobilière entre particulier.';
+$description = 'EasyBuy - Connection, site de vente immobilière entre particulier.';
 $imageName = 'https://easybuy-rewrite.000webhostapp.com/assets/img/logo.jpg';
 
 $usersManager = new UsersManager($db);

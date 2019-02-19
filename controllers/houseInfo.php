@@ -30,7 +30,7 @@ if (!empty($_GET['houseIdentification'])) {
     $houseByToken = $houseManager->getHouseByToken($_GET['houseIdentification']);
     foreach ($houseByToken[0] as $houseTitle) {
         $title = 'EasyBuy - ' . ucfirst($houseTitle->getTitle());
-        $description = ucfirst($houseTitle->getTitle());
+        $description = ucfirst($houseTitle->getDescription());
     }
     if (empty($houseByToken[0])) {
         header('location: http://localhost/EasyBuyRewrite/home');

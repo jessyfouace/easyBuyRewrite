@@ -5,14 +5,23 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><?php echo $title; ?></title>
-  <meta name="description" content="easyBuy, agence de vente de maison entre particuler">
+  <meta name="description" content="<?= $description ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#ff5722">
+  <meta name="keywords" content="vente, immobilier, immobilié, appartments, appartement, lille, paris, particulier, pas cher, maison, location, easybuy, rewrite, easybuy rewrite, easybuy-rewrite, jessy, fouace, jessy fouace">
+  <meta name="copyright" content="Copyright (C) 2019 - https://easybuy-rewrite.000webhostapp.com">
+  <meta name="google-site-verification" content="nULXEJgfSFY0FSJAJQ8uDrLkgHwm7k4WVkqrbI2BlBk" />
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="<?= $title ?>" />
   <meta name="twitter:description" content="<?= $description ?>" />
   <meta name="twitter:image" content="<?= $imageName ?>" />
+  
+  <meta name="og:type" content="article"/>
+  <meta name="og:title" content="<?= $title ?>" />
+  <meta name="og:description" content="<?= $description ?>" />
+  <meta name="og:image" content="<?= $imageName ?>" />
+  <meta name="og:url" content="https://easybuy-rewrite.000webhostapp.com" />
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -29,6 +38,17 @@
   <link rel="stylesheet" href="http://localhost/EasyBuyRewrite/assets/css/main.css">
   <link href="http://localhost/EasyBuyRewrite/assets/js/jquery-ui-1.8.23.custom/css/ui-lightness/jquery-ui-1.8.23.custom.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-522M4ZF');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-522M4ZF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 </head>
 
 <body>
