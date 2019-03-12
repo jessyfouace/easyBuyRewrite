@@ -78,7 +78,7 @@
           </li>
           <?php if(isset($_SESSION['role']) and $_SESSION['role'] == 'is_admin') { ?>
           <li class="nav-item <?php if ($isActive == 4) { ?> active <?php } ?>">
-            <a class="nav-link" href="admin"><i class="fas fa-user-secret"></i> Admin</a>
+            <a class="nav-link" href="http://localhost/EasyBuyRewrite/admin"><i class="fas fa-user-secret"></i> Admin</a>
           </li>
           <?php } ?>
         </ul>
